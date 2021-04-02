@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    Font-size: 16px;
+    font-family: 'Spartan', sans-serif;
+     background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+     background-repeat: no-repeat, no-repeat;
+     background-position: left top, right bottom;
+     height: 100vh;
+}
+
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+    
+    
+
+   /*===============TOP SECTION===============*/ 
+}
+.top-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0 5rem 0;
+    
+
+}
+.left{
+    width: 55%;
+    margin-right: 2rem;
+}
+.left h1{
+    color:hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 3rem;
+}
+.left p{
+    margin-bottom: 2rem;
+    color: hsl(303, 10%, 53%);
+    font-weight: 900;
+}
+
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.review{
+    padding: 1rem 0 1rem .7rem;
+    margin-bottom: .5rem;
+    border-radius: 10px;
+    background-color: hsl(300, 24%, 96%);
+}
+
+.review:first-child{
+    transform: translate(-35px);
+}
+.review:last-child{
+    transform: translate(35px);
+}
+
+
+
+/*=================BOTTOM SECTION============*/
+
+.testimonials{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.card{
+    background-color: hsl(300, 43%, 22%);
+    width: 30%;
+    border-radius: 10px;
+    color:#fff;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+.card img{
+    float: left;
+    border-radius: 50%;
+    height: 50px;
+}
+.verified{
+    color:hsl(333, 80%, 67%);
+}
+.statement{
+    padding-top: 1rem;
+}
+
+.colton-testimonial{
+    transform: translateY(-40px);
+}
+
+.anne-testimonial{
+    transform: translateY(40px);
+}
+
+@media (max-width:991px){
+    .top-container{
+        
+        flex-direction: column;
+        align-items: center;
+    }
+    .left{
+       min-width: 100%;
+       text-align: center;
+       
+    }
+    .review:first-child{
+        transform: translate(0);
+    }
+
+    .review:last-child{
+        transform: translate(0);
+    }
+
+    .testimonials{
+     flex-direction: column;
+     
+     align-items: center;
+    }
+    .card{
+        width: 80%;
+    }
+    
+}
+
+
+.star-span{
+   padding: 0 3rem 0 1rem;
+}
